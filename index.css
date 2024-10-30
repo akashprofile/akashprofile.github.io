@@ -1,0 +1,200 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Jost;
+  line-height: 1.2;
+}
+#header {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: Lavender;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  column-gap: 16px;
+  box-sizing: border-box;
+}
+#header>i.ms-outlined {
+  font-size: 24px;
+  flex-shrink: 0;
+  font-optical-sizing: 24px;
+}
+#appName {
+  flex-shrink: 1;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+#main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background: white;
+  font-size: 16px;
+}
+.switch {
+  font-size: 16px;
+  margin: 16px auto;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.switch>div {
+  width: 30%; 
+  max-width: 20ch;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.4em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background: Lavender;
+}
+.switch>div.open {
+  background: DeepSkyBlue;
+  color: white;
+  border-width: 0;
+}
+#emMonthSelector {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  margin: 16px 16px;
+  height: 28px;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+}
+#emMonthSelector>input:first-child,
+#emMonthSelector>input:disabled
+#emMonthSelector>input:focus {
+  line-height: 19.2px;
+  padding-left: 0;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 500;
+  border-style: none;
+  outline-style: none;
+  flex-grow: 1;
+  color: inherit;
+  background-color: inherit;
+  position: relative;
+}
+#emMonthSelector>input::after {
+  content: "";
+  display: block;
+  width: 19.2px;
+  height: 19.2px;
+  background: white;
+  position: absolute;
+  top: 0; right: 0;
+}
+#emMonthSelector>:last-child {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-optical-sizing: 24px;
+}
+#calender {
+  width: 100%;
+  height: calc(100% - 108px);
+  display: grid;
+  grid-template-rows: 1.7em 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  background-color: RosyBrown;
+}
+#calender>div:nth-child(-n+7) {
+  text-align: center;
+  padding: 0.25em 0;
+  color: white;
+}
+#calender>div:nth-child(n+8) {
+  background-color: white;
+}
+#navigation {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: Lavender;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navigation>.ms-outlined {
+  font-size: 24px;
+  font-optical-sizing: 24px;
+  padding: 6px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+#navigation>.currentSection {
+  color: DodgerBlue;
+  background: white;
+  border-color: DodgerBlue;
+}
+#hom, #emc {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#emc {
+  display: none;
+}
+#quoteBox {
+  width: 100%;
+  padding: 30px 12px;
+  box-sizing: border-box;
+}
+#quoteBox>:first-child, #quoteBox>:last-child {
+  display: block;
+  font-size: 48px;
+  font-optical-sizing: 48px;
+  font-variation-settings: 'FILL' 1;
+  color: Lavender;
+}
+#quoteBox>:first-child {
+  transform: rotateY(180deg) rotateX(180deg);
+  text-align: right;
+}
+#quote {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 48px;
+  text-align: center;
+  font-size: 24px;
+}
+#quoteBox>:last-child {
+  text-align: right;
+}
+
+#highlightBox {
+  display: grid;
+  padding: 0 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#highlightBox>div {
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 1em;
+  background: Lavender;
+  border-radius: 1em;
+  box-shadow: 0 0 10px MediumPurple;
+}
+#highlightBox>div>:first-child {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+#highlightBox>div>:last-child {
+  font-size: 32px;
+  text-align: center;
+}
