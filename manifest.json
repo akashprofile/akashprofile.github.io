@@ -1,0 +1,16 @@
+{
+  "name": "Eduezy",
+  "short_name": "Eduezy"
+  "desctiption": "User can add events in the calender, prepare todo lists, keep record of attendence, keep record of expenses.",
+  "start_url": "/eduez",
+  "display": "standalone",
+  "theme-color": "#E6E6FA",
+  "background-color": "#E6E6FA",
+  "orientation": "natural",
+  "icons": [
+    {
+      "src": "logo.png",
+      "purpose": "any"
+    }
+  ]
+}
