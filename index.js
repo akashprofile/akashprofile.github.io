@@ -58,8 +58,8 @@ let nav = document.getElementById("nav");
 
 let nem = document.getElementById("nem"); nem.section = emx; nem.active = false;
 let ntd = document.getElementById("ntd"); ntd.section = tdx; ntd.active = false;
-let nho = document.getElementById("nho"); nho.section = hom; nho.active = false;
-let nat = document.getElementById("nat"); nat.section = atx; nat.active = true;
+let nho = document.getElementById("nho"); nho.section = hom; nho.active = true;
+let nat = document.getElementById("nat"); nat.section = atx; nat.active = false;
 let nxt = document.getElementById("nxt"); nxt.section = xtx; nxt.active = false;
 let navi = [nem, ntd, nho, nat, nxt];
 
