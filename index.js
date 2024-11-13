@@ -85,7 +85,7 @@ db.sortAmx = function () {
   db.amx.sort((a, b) => (a.date < b.date)? -1: (a.date > b.date)? 1: 0);
 };
 let config = {
-  subs: ["DemoSubject"]
+  subs: ["DemoSubject", "ClickOnTopLeftCorner]
 };
 nat.initialLayout = function () {
   atmr.style.setProperty("left", "0%");
