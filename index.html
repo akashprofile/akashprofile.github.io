@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>EDUEZ - Student's Personal Assistant</title>
+  <meta name="author" content="Akash Kumar" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="logo-512x512.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="icons.css" />
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home-section.css" />
+  <link rel="stylesheet" href="event-manager-section.css" />
+  <link rel="stylesheet" href="attendance-tracker-section.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="head">
+    <i class="ms-outlined" id="configButton">tune</i>
+    <div id="appName">EDUEZ</div>
+  </div>
+  <div id="main">
+    <section id="emx">
+      <div class="switch">
+        <div id="emxsc" class="active">Calender</div>
+        <div id="emxse">Events</div>
+      </div>
+      <div id="emcea">
+        <div id="Emce">
+          <div id="emxms" class="month-selector">
+            <input type="month" value="2025-03" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+          <div id="emce">
+            <div id="emc">
+              <div>Sun</div><div>Mon</div><div>Tue</div>
+              <div>Wed</div><div>Thu</div><div>Fri</div>
+              <div>Sat</div><div>1</div><div>2</div><div>3</div>
+              <div>4</div><div>5</div><div>6</div><div>7</div>
+              <div>8</div><div>9</div><div>10</div><div>11</div>
+              <div>12</div><div>13</div><div>14</div><div>15</div>
+              <div>16</div><div>17</div><div>18</div><div>19</div>
+              <div>20</div><div>21</div><div>22</div><div>23</div>
+              <div>24</div><div>25</div><div>26</div><div>27</div>
+              <div>28</div><div>29</div><div>30</div><div>31</div>
+              <div>32</div><div>33</div><div>34</div><div>35</div>
+            </div>
+            <div id="eme">
+              Events will be listed there.
+            </div>
+          </div>0
+        </div>
+        <div id="emxa">
+          Screen To add an event
+        </div>
+      </div>
+      <div class="under-development">This section is under development</div>
+    </section>
+    <section id="tdx">
+      <div class="switch">
+        <div id="tdxsl">List</div>
+        <div id="tdxsp">Periodic</div>
+      </div>
+      <div id="tdlap">
+        <div id="tdl">
+          <div id="tdlds" class="date-selector">
+            <input type="date" value="2024-10-31" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+        </div>
+        <div id="tda">New Todo Entry Here</div>
+        <div id="tdpx">
+          <div id="tdpxs">
+            <div id="tdpxsd">Daily</div>
+            <div id="tdpxsw">Weekly</div>
+            <div id="tdpxsm">Monthly</div>
+          </div>
+          <div id="tdpd">Daily Todo</div>
+          <div id="tdpw">Weekly Todo</div>
+          <div id="tdpm">Monthly Todo</div>
+        </div>
+      </div>
+      <div class="under-development">This section is under development</div>
+    </section>
+    <section id="hom">
+      <div id="quoteBox">
+        <i class="ms-outlined">format_quote</i>
+        <div id="quote">Don't worry about failure, you have to be right only once.</div>
+        <i class="ms-outlined">format_quote</i>
+      </div>
+      <div id="highlightBox">
+        <div>
+          <div id="htt">Todo's Completed</div>
+          <div id="htc">7 / 10</div>
+        </div>
+        <div>
+          <div id="het">Fresher's Party</div>
+          <div id="hed">12 d</div>
+        </div>
+        <div>
+          <div id="hxt">Expenses</div>
+          <div id="hxc">&#x20B9; 3480</div>
+        </div>
+        <div>
+          <div id="hat">Attendence</div>
+          <div id="hac">88.9 %</div>
+        </div>
+      </div>
+      <div class="under-development">This section is under development</div>
+    </section>
+    <!-- Attendence Tracker structure begins -->
+    <section id="atx">
+      <div class="switch">
+        <div id="atxsm" class="active">Mark</div>
+        <div id="atxsr">Register</div>
+      </div>
+      <div id="atmr">
+        <div id="atm">
+          <div id="atmds" class="date-selector">
+            <input id="atmdsi" type="date" value="2025-01-01" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+          <div id="atmlc">
+            <div id="atmlhc">
+              <div>Subject</div>
+              <div>Present</div>
+              <div>Absent</div>
+            </div>
+            <div id="atmlic"></div>
+          </div>
+          <div id="atm-note">Click button to increase your present or absent. Hold the button to reset it to zero.</div>
+        </div>
+        <div id="atr">
+          <div id="atrms" class="month-selector">
+            <input id="atrmsi" type="month" value="2025-01" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+          <div id="atr-table"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Expense Tracker structure begins -->
+    <section id="xtx">
+      <div class="switch">
+        <div id="xtxse">Expenses</div>
+        <div id="xtxsr">Record</div>
+      </div>
+      <div id="xter">
+        <div id="xte">
+          <div id="eteds" class="date-selector">
+            <input type="date" value="2025-02-01" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+          <div id="xtel">
+            Here the entries of daily expenses will be done.
+          </div>
+        </div>
+        <div id="xtr">
+          <div id="xtrms" class="month-selector">
+            <input type="month" value="2025-02" />
+            <i class="ms-outlined">edit</i>
+            <output></output>
+          </div>
+          <div id="xtrl">
+            Here the monthly report of expenses will be displayed
+          </div>
+        </div>
+      </div>
+      <div class="under-development">This section is under development</div>
+    </section>
+  </div>
+  <div id="nav">
+    <i id="nat" class="ms-outlined">person_raised_hand</i>
+    <i id="nxt" class="ms-outlined">payments</i>
+    <i id="nho" class="ms-outlined active">home</i>
+    <i id="nem" class="ms-outlined">date_range</i>
+    <i id="ntd" class="ms-outlined">check_circle</i>
+  </div>
+</body>
+</html>
