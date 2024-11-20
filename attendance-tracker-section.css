@@ -1,0 +1,147 @@
+#atmr {
+  position: absolute;
+  width: 200%;
+  height: calc(100% - 64px);
+  transition-property: left;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
+  overflow: scroll;
+  left: 0; // Change left: -100%; for getting register screen.
+}
+#atm, #atr {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: scroll;
+  top: 0;
+}
+#atm { left: 0; }
+#atr { left: 50%; }
+#atmlc {
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+  background-color: Lavender;
+  margin: 48px auto;
+  font-size: 18px;
+  padding-bottom: 0.5em;
+  border-radius: 16px;
+}
+#atmlhc, .atmli {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#atmlhc>div,  .atmli>div {
+  font-family: Jost;
+  text-align: center;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0.5em 0;
+}
+#atmlhc>div:first-child,
+.atmli>div:first-child {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.atmli>div:nth-child(2),
+.atmli>div:nth-child(3) {
+  border-radius: 19.8px;
+  margin: 0.4em 0;
+  background-color: #FAFAE6;
+}
+#atrl {
+  background-color: black;
+}
+#atr-table {
+  background-color: Lavender;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  max-height: calc(100% - 48px - 16px);
+  overflow: scroll;
+  position: relative;
+  border-radius: 8px;
+}
+#atr-table .row {
+  display: block;
+  min-width: 100%;
+  width: 72ch;
+  height: 28px;
+  box-sizing: border-box;
+}
+#atr-table .thead {
+  position: sticky;
+  top: 0;
+  background-color: Lavender;
+  z-index: 5;
+}
+
+#atr-table .tfoot {
+  position: sticky;
+  bottom: 0;
+  background-color: Lavender;
+  z-index: 5;
+}
+#atr-table .tfoot div{ 
+  background-color: Lavender;
+}
+#atr-table .row div {
+  float: left;
+  line-height: 28px;
+  flex-shrink: 0;
+  width: 8ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 28px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#atr-table .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#atr-table .row>div:first-child {
+  position: sticky;
+  left: 0;
+}
+#atr-table .row:nth-child(2n) {
+  background-color: white;
+}
+#atr-table .row:nth-child(2n+1) {
+  background-color: Moccasin;
+}
+#atr-table>.thead.row,
+#atr-table>.tfoot>.row,
+#atr-table .row>div:first-child {
+  background-color: Lavender;
+}
+span.pre {
+  color: darkGreen;
+}
+span.abs {
+  color: red;
+}
+#atm-note {
+  width: calc(100% - 32px);
+  background: Lavender;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: Jost;
+}
+/*
+#atr-table .row:not(:first-child)>div:first-child {
+  position: sticky;
+  left: 0;
+  background-color: Lavender;
+  z-index: 5;
+}
+#atr-table>.thead>div:first-child {
+  position: sticky;
+  background: red;
+  top: 0; left: 0;
+}*/

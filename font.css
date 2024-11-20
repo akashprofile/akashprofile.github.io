@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Jost";
+  src: url("ss-jost-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+}

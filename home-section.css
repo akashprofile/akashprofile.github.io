@@ -1,0 +1,45 @@
+#quoteBox {
+  padding: 30px 12px;
+  box-sizing: border-box;
+}
+#quoteBox>:first-child, #quoteBox>:last-child {
+  display: block;
+  font-size: 48px;
+  font-optical-sizing: 48px;
+  font-variation-settings: 'FILL' 1;
+  color: Lavender;
+  text-align: right;
+}
+#quoteBox>:first-child {
+  transform: rotateY(180deg) rotateX(180deg);
+}
+#quote {
+  box-sizing: border-box;
+  padding: 0 48px;
+  text-align: center;
+  font-size: 24px;
+}
+#highlightBox {
+  display: grid;
+  padding: 0 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#highlightBox>div {
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 1em;
+  background: Lavender;
+  border-radius: 1em;
+  box-shadow: 0 0 10px MediumPurple;
+}
+#highlightBox>div>:first-child {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+#highlightBox>div>:last-child {
+  font-size: 32px;
+  text-align: center;
+}
